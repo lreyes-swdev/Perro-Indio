@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perro Indio</title>
+    <meta name="description" content="Perro Indio, Página Web NO Oficial">
+    <meta name="keywords" content="Perro Indio, Rock Nacional, La manada más linda del mundo">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/8a7b1fbaea.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="w-100 fixed-top">
+        <div class="accordion" id="accordion-spotify">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSpotify">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSpotify" aria-expanded="true" aria-controls="collapseSpotify">
+                        Discografía
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse" id="collapseSpotify" aria-labelledby="headingSpotify"
+                    data-bs-parent="#accordion-spotify">
+                    <div class="accordion-body -nav-spotify">
+                        <ul class="nav justify-content-evenly">
+                            <li class="nav-item">
+                                <h2><a class="nav-link" href="#album-spotify" onclick="infoDisco(1)">
+                                        <i class="fab fa-spotify"></i> Perro Indio</a></h2>
+                            </li>
+                            <li class="nav-item">
+                                <h2><a class="nav-link" href="#album-spotify" onclick="infoDisco(2)">
+                                        <i class="fab fa-spotify"></i> Laberinto</a></h2>
+                            </li>
+                            <li class="nav-item">
+                                <h2><a class="nav-link" href="#album-spotify" onclick="infoDisco(3)">
+                                        <i class="fab fa-spotify"></i> Cumelén</a></h2>
+                            </li>
+                            <li class="nav-item">
+                                <h2><a class="nav-link" href="#album-spotify" onclick="infoDisco(4)">
+                                        <i class="fab fa-spotify"></i> Kaani</a></h2>
+                            </li>
+                            <li class="nav-item">
+                                <h2><a class="nav-link disabled" href="#album-spotify" onclick="infoDisco(5)">
+                                        <i class="fab fa-spotify"></i> Largo camino al sol</a></h2>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark d-inline-flex p-1">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart"
+                aria-controls="offcanvasStart"><span class="navbar-toggler-icon"></span></button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasStart"
+                aria-labelledby="offcanvasStartLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold" id="offcanvasStartLabel">MENÚ</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ladridos">Ladridos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nosotros">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#discografía">Discografía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#galería">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tienda</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-center pb-2">
+                    <h1><img class="w-75" src="img/isologo_2.png" alt="Perro Indio"></h1>
+                    <span>La forma más plena de seguir existiendo</span>
+                    <ul class="nav justify-content-evenly">
+                        <li><a href="https://www.instagram.com/perroindiorock/" title="Instagram perroindiorock"
+                                target="_blank">
+                                <i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/PerroIndioRock" title="Facebook PerroIndioRock"
+                                target="_blank">
+                                <i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/perroindiorock" title="Twitter perroindiorock" target="_blank">
+                                <i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCoyR00tqGESsdICO7MsBf4Q"
+                                title="Youtube Perro Indio Rock" target="_blank">
+                                <i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://open.spotify.com/artist/6Ek2e4nhkq57dOiKuYt15n" title="Spotify Perro Indio"
+                                target="_blank">
+                                <i class="fa fa-spotify"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="carousel">
+            <div id="carouselSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/l01.jpg" class="d-block w-100" alt="Largo Camino al Sol 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/l02.jpg" class="d-block w-100" alt="Largo Camino al Sol 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/l03.jpg" class="d-block w-100" alt="Largo Camino al Sol 3">
+                    </div>
+                </div>
+                <div class="carousel-caption container-fluid pt-5">
+                    <div class="row align-items-center h-100">
+                        <div id="countdown">
+                            <h1 class="typewrite" data-period="2000"
+                                data-type='[ "MUY PRONTO", "Largo Camino al Sol", "NUEVO DISCO" ]'>
+                                <span class="wrap"></span>
+                            </h1>
+
+                            <span id="día">10</span>
+                            <div id="mes">MARZO</div>
+
+                            <span id="dd">00</span>
+                            <span class="ddhhmmss">Días</span>
+
+                            <span id="hh">00</span>
+                            <span class="ddhhmmss">Horas</span>
+
+                            <span id="mm">00</span>
+                            <span class="ddhhmmss">Minutos</span>
+
+                            <span id="ss">00</span>
+                            <span class="ddhhmmss">Segundos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid" id="ladridos">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-lg-11 p-1">
+                    <a href="#ladridos">
+                        <h2 class="fancy-title">
+                            <span class="ps-3 pe-2"><i class="fas fa-calendar-alt"></i></span>
+                            Próximos Ladridos
+                        </h2>
+                    </a>
+
+                    <div class="row p-2 m-0">
+                        <div class="col-12 col-sm-6 col-xl-3">
+                            <div class="card bg-transparent border-medium overflow-auto mb-3">
+                                <img src="img/manada08.jpg" class="card-img img-medium" alt="Flyer">
+                                <div class="card-img-overlay cursor-pointer">
+                                    <!--button type="button" class="btn btn-success border-medium border-white d-block">
+                                        <i class="fa fa-ticket"></i> Comprar</button-->
+                                    <a href="https://mianticipada.com/show/perro-indio-en-chacabuco-sab-29-enero-2330hs-show-atp/"
+                                        title="mianticipada.com Perro Indio en Chacabuco" target="_blank">
+                                        <button type="button"
+                                            class="btn btn-success border-medium border-white d-block">
+                                            <i class="fa fa-ticket"></i> Comprar</button>
+                                    </a>
+
+                                    <div class="position-absolute bottom-0 mb-3">
+                                        <h4 class="card-title mb-1">29 ENERO</h4>
+                                        <span class="card-text">23:30hs</span>
+                                        <h3 class="card-title mt-4">La Vieja Conexión</h3>
+                                        <span class="card-text">Chacabuco</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xl-3">
+                            <div class="card bg-transparent border-medium overflow-auto mb-3">
+                                <img src="img/manada09.jpg" class="card-img img-medium" alt="Flyer">
+                                <div class="card-img-overlay cursor-pointer">
+                                    <button type="button" class="btn btn-warning border-medium border-white d-block">
+                                        <i class="fa fa-ticket"></i> Últimas Entradas</button>
+                                    <div class="position-absolute bottom-0 mb-3">
+                                        <h4 class="card-title mb-1">02 OCTUBRE</h4>
+                                        <span class="card-text">20:00hs</span>
+                                        <h3 class="card-title mt-4">Teatro Greison</h3>
+                                        <span class="card-text">Monte Grande</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xl-3">
+                            <div class="card bg-transparent border-medium overflow-auto mb-3">
+                                <img src="img/manada10.jpg" class="card-img img-medium" alt="Flyer">
+                                <div class="card-img-overlay cursor-pointer">
+                                    <button type="button"
+                                        class="btn btn-dark border-medium border-white d-block">Agotado</button>
+                                    <div class="position-absolute bottom-0 mb-3">
+                                        <h4 class="card-title mb-1">19 SEPTIEMBRE</h4>
+                                        <span class="card-text">21:00hs</span>
+                                        <h3 class="card-title mt-4">Complejo Bailotage</h3>
+                                        <span class="card-text">Bahía Blanca</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xl-3">
+                            <div class="card bg-transparent border-medium overflow-auto mb-3">
+                                <img src="img/manada11.jpg" class="card-img img-medium" alt="Flyer">
+                                <div class="card-img-overlay cursor-pointer">
+                                    <button type="button" class="btn btn-dark border-medium border-white d-block">
+                                        Agotado</button>
+                                    <div class="position-absolute bottom-0 mb-3">
+                                        <h4 class="card-title mb-1">31 JULIO</h4>
+                                        <span class="card-text">20:00hs</span>
+                                        <h3 class="card-title mt-4">Encuentro Club</h3>
+                                        <span class="card-text">San Justo</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid" id="nosotros">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-lg-11 p-1">
+                    <a href="#nosotros">
+                        <h2 class="fancy-title">
+                            <span class="ps-3 pe-2"><i class="fas fa-paw"></i></span>
+                            Perro Indio
+                        </h2>
+                    </a>
+                </div>
+                <div class="col-11">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-12 col-lg-9">
+                            <p class="text-justify m-0 pb-4">
+                                Perro Indio es un poderoso trío de Rock & Blues pesado
+                                nacida a fines del año 2016 en Buenos Aires, Argentina.
+                                Desde sus inicios, la banda se encuentra integrada por
+                                Sergio Coccaro en bajo, Cristian Gauna en batería,
+                                y Rodrigo Alvarez en guitarra y voz.
+                                Su discografía tiene 5 discos editados,
+                                a través de los cuales construyó una relación sólida con su
+                                <abbr title="LA MANADA MÁS LINDA DEL MUNDO">público</abbr>
+                                tan cálido como fiel. Sus discos se encuentran disponibles
+                                tanto en formato físico como en distintas plataformas digitales:
+                                (2017) Perro Indio, (2018) Laberinto, (2019) Cumelén,
+                                (2019) Kaani -disco doble en vivo-, y (2021) Largo Camino al Sol.
+                            </p>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 px-4 pb-4">
+                            <img src="img/isologo.png" class="img-fluid" alt="Isologo Perro Indio">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="banda">
+            <div class="card bg-transparent rounded-0 border-0">
+                <img src="img/trio10.jpeg" class="img-fluid" alt="Banda">
+                <div class="card-img-overlay p-0 rounded-0">
+                    <div class="position-absolute bottom-0 pb-2 text-center w-100">
+                        <div>
+                            <h5>SERGIO COCCARO</h5>
+                            <h6>(bajo)</h6>
+                        </div>
+                        <div>
+                            <h5>CRISTIAN GAUNA</h5>
+                            <h6>(batería)</h6>
+                        </div>
+                        <div>
+                            <h5>RODRIGO ALVAREZ</h5>
+                            <h6>(guitarra y voz)</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center p-3">
+                        <h5 class="text-success">STAFF PERRO</h5>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                        <h5>CARLOS DÍAZ</h5>
+                        <h6>MANAGER</h6>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                        <h5>HAMID PRADA</h5>
+                        <h6>ROAD MANAGER</h6>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                        <h5>JOAQUÍN CANZANI</h5>
+                        <h6>PRODUCTION MANAGER</h6>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                        <h5>EULOGIO LIN</h5>
+                        <h6>ESCENARIO</h6>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                        <h5>ELOI JORDAN</h5>
+                        <h6>ESCENARIO</h6>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                        <h5>JUAN BARBERA</h5>
+                        <h6>SONIDO FOH</h6>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                        <h5>LUIS LILLO</h5>
+                        <h6>SONIDO MONITOR</h6>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                        <h5>JAIRO MAZA</h5>
+                        <h6>ILUMINADOR</h6>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                        <h5>EUSEBIO PAGES</h5>
+                        <h6>PRODUCCIÓN</h6>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-center">
+                        <h5>REYES LEANDRO</h5>
+                        <h6>SITIO WEB</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid" id="discografía">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-lg-11 p-1">
+                    <a href="#discografía">
+                        <h2 class="fancy-title">
+                            <span class="ps-3 pe-2"><i class="fas fa-compact-disc"></i></span>
+                            Discografía
+                        </h2>
+                    </a>
+                </div>
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-6 col-sm-4 col-md p-0">
+                            <div class="card bg-transparent rounded-0 border-0">
+                                <div class="img-small-square">
+                                    <img src="img/d2017.jpg" class="card-img" alt="Disco Perro Indio">
+                                </div>
+                                <div class="card-img-overlay cursor-pointer p-0 rounded-0" onclick="infoDisco(1)">
+                                    <!--div class="position-absolute bottom-0 text-center w-100">
+                                    <span class="card-text">2017</span>
+                                </div-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md p-0">
+                            <div class="card bg-transparent rounded-0 border-0">
+                                <div class="img-small-square">
+                                    <img src="img/d2018.jpg" class="card-img" alt="Disco Laberinto">
+                                </div>
+                                <div class="card-img-overlay cursor-pointer p-0 rounded-0" onclick="infoDisco(2)">
+                                    <!--div class="position-absolute bottom-0 text-center w-100">
+                                    <span class="card-text">2018</span>
+                                </div-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md p-0">
+                            <div class="card bg-transparent rounded-0 border-0">
+                                <div class="img-small-square">
+                                    <img src="img/d2019.jpg" class="card-img" alt="Disco Cumelén">
+                                </div>
+                                <div class="card-img-overlay cursor-pointer p-0 rounded-0" onclick="infoDisco(3)">
+                                    <!--div class="position-absolute bottom-0 text-center w-100">
+                                    <span class="card-text">2019</span>
+                                </div-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md p-0">
+                            <div class="card bg-transparent rounded-0 border-0">
+                                <div class="img-small-square">
+                                    <img src="img/d2019-I.jpg" class="card-img" alt="Disco Kaani">
+                                </div>
+                                <div class="card-img-overlay cursor-pointer p-0 rounded-0" onclick="infoDisco(4)">
+                                    <!--div class="position-absolute bottom-0 text-center w-100">
+                                    <span class="card-text">2019</span>
+                                </div-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4 col-md p-0">
+                            <div class="card bg-transparent rounded-0 border-0">
+                                <div class="img-small-square">
+                                    <img src="img/d2021.jpg" class="card-img" alt="Disco Largo camino al sol">
+                                </div>
+                                <div class="card-img-overlay cursor-pointer p-0 rounded-0" onclick="infoDisco(5)">
+                                    <!--div class="position-absolute bottom-0 text-center w-100">
+                                    <span class="card-text">2021</span>
+                                </div-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" id="album-spotify">
+                <!--hr>
+                <div class="row justify-content-center align-items-center text-center">
+                    <div onclick="infoDisco(0)">
+                        <p class="cursor-pointer m-0">
+                            <i class="fa fa-times" aria-hidden="true"></i> Ocultar
+                        </p>
+                        <hr>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <img src="img/d2017.jpg" class="img-fluid" alt="Isologo Perro Indio">
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <hr>
+                        <p>2017 &copy; PERRO INDIO</p>
+                        <hr>
+                        <p>Grabado, mezclado y masterizado por Fernando Iacono en estudio La Autopista Records.</p>
+                        <hr>
+                        <iframe src="https://open.spotify.com/embed/album/2piiblV4yUxDNlzro7plZz?utm_source=generator"
+                            width="100%" height="390" frameBorder="0" allowfullscreen=""
+                            allow="clipboard-write; encrypted-media; picture-in-picture"></iframe>
+                    </div>
+                    <div onclick="infoDisco(0)">
+                        <hr>    
+                        <p class="cursor-pointer m-0">
+                            <i class="fa fa-times" aria-hidden="true"></i> Ocultar
+                        </p>
+                    </div>
+                </div>
+                <hr-->
+            </div>
+        </section>
+
+        <section class="container-fluid" id="galería">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-lg-11 p-1">
+                    <a href="#galería">
+                        <h2 class="fancy-title">
+                            <span class="ps-3 pe-2"><i class="fas fa-camera-retro"></i></span>
+                            Galería
+                        </h2>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-10">
+                    <div class="row justify-content-center">
+                        <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/g01.jpg" class="d-block w-100" alt="Slide 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/g02.jpg" class="d-block w-100" alt="Slide 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/g03.jpg" class="d-block w-100" alt="Slide 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/g04.jpg" class="d-block w-100" alt="Slide 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/g05.jpg" class="d-block w-100" alt="Slide 5">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid" id="contacto">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-lg-11 p-1 mb-4">
+                    <a href="#contacto">
+                        <h2 class="fancy-title">
+                            <span class="ps-3 pe-2"><i class="fas fa-comment-dots"></i></span>
+                            Contacto
+                        </h2>
+                    </a>
+                    <p class="text-center w-responsive mx-auto m-0">
+                        ¿Tenés alguna pregunta? Contactanos directamente.
+                        Nos pondremos en contacto contigo para ayudarte.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <!-- Bootstrap 5 starter form -->
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <div class="row">
+                            <!-- Name input -->
+                            <div class="col-12 col-sm-12 col-lg-6 mb-3">
+                                <label class=" form-label" for="name">Nombre</label>
+                                <input class="form-control" id="name" type="text" placeholder="Nombre"
+                                    data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">Se requiere un
+                                    nombre.
+                                </div>
+                            </div>
+
+                            <!-- Email address input -->
+                            <div class="col-12 col-sm-12 col-lg-6 mb-3">
+                                <label class="form-label" for="emailAddress">Dirección de correo
+                                    electrónico</label>
+                                <input class="form-control" id="emailAddress" type="email"
+                                    placeholder="Dirección de correo electrónico"
+                                    data-sb-validations="required, email" />
+                                <div class="invalid-feedback" data-sb-feedback="emailAddress:required">
+                                    La dirección de correo electrónico es requerida.</div>
+                                <div class="invalid-feedback" data-sb-feedback="emailAddress:email">
+                                    La dirección de correo electrónico no es válida.</div>
+                            </div>
+
+                            <!-- Message input -->
+                            <div class="mb-3">
+                                <label class="form-label" for="message">Mensaje</label>
+                                <textarea class="form-control" id="message" type="text" placeholder="Mensaje"
+                                    style="height: 10rem;" data-sb-validations="required"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">Se requiere un
+                                    mensaje.
+                                </div>
+                            </div>
+
+                            <!-- Form submissions success message -->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">Envío de formulario exitoso!</div>
+                            </div>
+
+                            <!-- Form submissions error message -->
+                            <div class="d-none" id="submitErrorMessage">
+                                <div class="text-center text-danger mb-3">Error al enviar el mensaje!</div>
+                            </div>
+
+                            <!-- Form submit button -->
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-lg disabled" id="submitButton"
+                                    type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container mt-5">
+            <hr>
+            <div class="row justify-content-center">
+                <div class="col-10 col-sm-6 text-center">
+                    <a href="#"><i class="fa fa-angle-up"></i></a>
+                    <p>SEGUINOS EN:</p>
+                    <ul class="nav justify-content-evenly pb-3">
+                        <li><a href="https://www.instagram.com/perroindiorock/" title="Instagram perroindiorock"
+                                target="_blank">
+                                <i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/PerroIndioRock" title="Facebook PerroIndioRock"
+                                target="_blank">
+                                <i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/perroindiorock" title="Twitter perroindiorock" target="_blank">
+                                <i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCoyR00tqGESsdICO7MsBf4Q"
+                                title="Youtube Perro Indio Rock" target="_blank">
+                                <i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://open.spotify.com/artist/6Ek2e4nhkq57dOiKuYt15n" title="Spotify Perro Indio"
+                                target="_blank">
+                                <i class="fa fa-spotify"></i></a></li>
+                    </ul>
+                    <p>&copy; 2021 Perro Indio</p>
+                    <p>[Leand Reyes]</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script src="js/popper.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
