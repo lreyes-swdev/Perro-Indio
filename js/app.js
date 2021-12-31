@@ -102,7 +102,7 @@ const infoDisco = (disco) => {
                 <hr>
             </div>
             <div class="col-12 col-lg-6">
-                <img src="../img/${info.tapa}" class="img-fluid" alt="Isologo Perro Indio">
+                <img src="img/${info.tapa}" class="img-fluid" alt="Isologo Perro Indio">
             </div>
             <div class="col-12 col-lg-6">
                 <hr>
